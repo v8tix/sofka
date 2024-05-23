@@ -1,0 +1,24 @@
+server:
+  port: ${SERVER_PORT:9999}
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+      org:
+        hibernate:
+          envers:
+            default_schema: public
+            store_data_at_delete: true

@@ -1,0 +1,36 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  datasource:
+    driver-class-name: ${SPRING_DATASOURCE_DRIVER_CLASS_NAME:org.postgresql.Driver}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://192.168.100.35:5432/sofka_test}
+    username: ${SPRING_DATASOURCE_USERNAME:sofka_test_user}
+    password: ${SPRING_DATASOURCE_PASSWORD:018f9d54-2dff-72e4-9ba1-8497f2b9f72c}
+  jpa:
+    database-platform: ${SPRING_JPA_DATABASE_PLATFORM:org.hibernate.dialect.PostgreSQLDialect}
+    generate-ddl: ${SPRING_JPA_GENERATE_DDL:true}
+    hibernate:
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO:none}
+    properties:
+      hibernate:
+        globally_quoted_identifiers: ${SPRING_HIBERNATE_GLOBALLY_QUOTED_IDENTIFIERS:true}
+        format_sql: ${SPRING_HIBERNATE_FORMAT_SQL:true}
+        jdbc:
+          time_zone: ${SPRING_HIBERNATE_JDBC_TIME_ZONE:UTC}
+      org:
+        hibernate:
+          envers:
+            default_schema: ${SPRING_HIBERNATE_ENVERS_DEFAULT_SCHEMA:cuenta}
+            store_dataAt_delete: ${SPRING_HIBERNATE_ENVERS_STORE_DATA_AT_DELETE:true}
+ms:
+  cliente:
+      url: ${CLIENTE_URL:http://localhost:8282}
+
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: ${FEIGN_LOGGER_LEVEL:full}
+        connectTimeout: ${FEIGN_CONNECT_TIMEOUT:5000}
+        readTimeout: ${FEIGN_READ_TIMEOUT:5000}

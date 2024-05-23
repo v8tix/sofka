@@ -1,0 +1,865 @@
+{
+	"info": {
+		"_postman_id": "ee325bf4-a83f-444b-b997-bdca0c7fbfd0",
+		"name": "Ejercicio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33327129"
+	},
+	"item": [
+		{
+			"name": "crear clientes",
+			"item": [
+				{
+					"name": "Crear cliente Jose Lema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Jose Lema\",\r\n  \"identificacion\": \"1718536545\",\r\n  \"genero\": \"Masculino\",\r\n  \"edad\": 35,  \r\n  \"direccion\": \"Otavalo sn y principal\",\r\n  \"telefono\": \"0987456985\",\r\n  \"contrasena\": \"1234\",\r\n  \"estado\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8282/clientes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8282",
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear cliente Mariela Montalvo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Marianela Montalvo\",\r\n  \"identificacion\": \"1745859611\",\r\n  \"genero\": \"Femenino\",\r\n  \"edad\": 48,  \r\n  \"direccion\": \"Amazonas y NNUU\",\r\n  \"telefono\": \"097548965\",\r\n  \"contrasena\": \"5678\",\r\n  \"estado\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8282/clientes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8282",
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear cliente Juan Osorio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Juan Osorio\",\r\n  \"identificacion\": \"1745859678\",\r\n  \"genero\": \"Masculino\",\r\n  \"edad\": 43,  \r\n  \"direccion\": \"13 junio y Equinoccial\",\r\n  \"telefono\": \"098874587\",\r\n  \"contrasena\": \"1245\",\r\n  \"estado\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8282/clientes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8282",
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "crear cuentas",
+			"item": [
+				{
+					"name": "Crear cuenta ahorros Jose Lema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"478758\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": 2000.00,\r\n  \"estado\": \"true\",\r\n  \"clienteId\": \"5de66ac3-e1a9-43ee-97cd-f2b5877882a5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear cuenta corriente Jose Lema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"585545\",\r\n  \"tipoCuenta\": \"Corriente\",\r\n  \"saldoInicial\": 1000.00,\r\n  \"estado\": \"true\",\r\n  \"clienteId\": \"5de66ac3-e1a9-43ee-97cd-f2b5877882a5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear cuenta corriente Mariela Montalvo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"225487\",\r\n  \"tipoCuenta\": \"Corriente\",\r\n  \"saldoInicial\": 100.00,\r\n  \"estado\": \"true\",\r\n  \"clienteId\": \"f7172f96-8e36-4502-b016-591a8d693821\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear cuenta ahorros Juan Osorio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"495878\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": 0.00,\r\n  \"estado\": \"true\",\r\n  \"clienteId\": \"f05f3863-f0fd-40e8-a01c-1c2bdec911f8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear cuenta ahorros Mariela Montalvo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"496825\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": 540.00,\r\n  \"estado\": \"true\",\r\n  \"clienteId\": \"f7172f96-8e36-4502-b016-591a8d693821\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "crear movimientos",
+			"item": [
+				{
+					"name": "Crear movimiento deposito Juan Osorio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tipoMovimiento\": \"Deposito\",\r\n  \"valor\": 150,\r\n  \"cuentaId\": \"1c81ebff-318f-4644-970a-769f8d4edd52\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear movimiento retiro Jose Lema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tipoMovimiento\": \"Retiro\",\r\n  \"valor\": -575.00,\r\n  \"cuentaId\": \"0bd54c42-827a-47f8-869e-883157ef272e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear movimiento deposito Mariela Montalvo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tipoMovimiento\": \"Deposito\",\r\n  \"valor\": 600,\r\n  \"cuentaId\": \"f6af200f-c5b9-43c5-8002-5aa15e2e6fb3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear movimiento retiro Mariela Montalvo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tipoMovimiento\": \"Retiro\",\r\n  \"valor\": -540,\r\n  \"cuentaId\": \"f88c58fc-03ee-4fe5-baec-ee65530a4982\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reporte",
+			"item": [
+				{
+					"name": "Reporte",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reportes?start_date=2024-01-01T00:00:00&end_date=2024-05-31T23:59:59&client_id=f7172f96-8e36-4502-b016-591a8d693821",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2024-01-01T00:00:00"
+								},
+								{
+									"key": "end_date",
+									"value": "2024-05-31T23:59:59"
+								},
+								{
+									"key": "client_id",
+									"value": "f7172f96-8e36-4502-b016-591a8d693821"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cliente",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Felipe Arco\",\r\n  \"genero\": \"Masculino\",\r\n  \"edad\": 25,\r\n  \"identificacion\": \"1745859623\",\r\n  \"direccion\": \"Av 10 de Agosto\",\r\n  \"telefono\": \"0985741245\",\r\n  \"contrasena\": \"9856655444\",\r\n  \"estado\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8282/clientes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8282",
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8282/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8282",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8282/clientes/5de66ac3-e1a9-43ee-97cd-f2b5877882a5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8282",
+							"path": [
+								"clientes",
+								"5de66ac3-e1a9-43ee-97cd-f2b5877882a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"direccion\": \"Calle Guabos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8282/clientes/4b9cf4ab-820f-4ee9-9806-00bc474ed7f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8282",
+							"path": [
+								"clientes",
+								"4b9cf4ab-820f-4ee9-9806-00bc474ed7f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Felipe Arco\",\r\n  \"genero\": \"Masculino\",\r\n  \"edad\": 25,\r\n  \"identificacion\": \"1745856352\",\r\n  \"direccion\": \"Calle America\",\r\n  \"telefono\": \"02457845\",\r\n  \"contrasena\": \"4545454545455\",\r\n  \"estado\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8282/clientes/4b9cf4ab-820f-4ee9-9806-00bc474ed7f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8282",
+							"path": [
+								"clientes",
+								"4b9cf4ab-820f-4ee9-9806-00bc474ed7f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8282/clientes/4b9cf4ab-820f-4ee9-9806-00bc474ed7f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8282",
+							"path": [
+								"clientes",
+								"4b9cf4ab-820f-4ee9-9806-00bc474ed7f8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cuenta",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"78888855\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": 60000.00,\r\n  \"estado\": \"true\",\r\n  \"clienteId\": \"c26c53db-4548-4b42-864f-586ac62f31a9\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/82ab8821-50b5-4b43-ab33-7d68d0a1b84c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"82ab8821-50b5-4b43-ab33-7d68d0a1b84c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"45566655\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": 1000.00,\r\n  \"estado\": \"true\",\r\n  \"clienteId\": \"c26c53db-4548-4b42-864f-586ac62f31a9\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/82ab8821-50b5-4b43-ab33-7d68d0a1b84c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"82ab8821-50b5-4b43-ab33-7d68d0a1b84c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"saldoInicial\": 2500.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/82ab8821-50b5-4b43-ab33-7d68d0a1b84c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"82ab8821-50b5-4b43-ab33-7d68d0a1b84c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cuentas/455bba26-345c-42d3-ae26-b0474c982301",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"455bba26-345c-42d3-ae26-b0474c982301"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "movimiento",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tipoMovimiento\": \"Deposito\",\r\n  \"valor\": 1000.00,\r\n  \"cuentaId\": \"b0a2348d-4210-44cf-a3b3-b8d94eaef84e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos/3cac3d61-1855-4771-a191-74fb2409e410",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"3cac3d61-1855-4771-a191-74fb2409e410"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\": \"2024-03-08T11:54:07.5847818\",\r\n    \"tipoMovimiento\": \"Deposito\",\r\n    \"valor\": 100,\r\n    \"saldo\": 3200.00,\r\n    \"cuentaId\": \"5f041c8c-6f8f-442d-9299-a7e9baf468df\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos/fe125a47-87ab-44c6-9d16-6f651e5f1519",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"fe125a47-87ab-44c6-9d16-6f651e5f1519"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"saldo\": 60000.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos/fe125a47-87ab-44c6-9d16-6f651e5f1519",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"fe125a47-87ab-44c6-9d16-6f651e5f1519"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos/f83e5b48-a416-4544-a2c8-1e6db33e8d19",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"f83e5b48-a416-4544-a2c8-1e6db33e8d19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
