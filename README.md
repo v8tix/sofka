@@ -55,7 +55,7 @@
 ```
 8. Para probar brevemente al contenedor:
 ```bash
-   $ curl http://localhost:8088/clientes
+   $ curl http://localhost:8282/clientes
 ```
 9. Para el contenedor cuenta, puedes repetir los pasos 1-4, adaptando los nombres de los jars de salida.
 10. Comandos para construir y correr el contenedor cuenta:
